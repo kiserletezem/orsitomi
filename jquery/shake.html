@@ -1,0 +1,66 @@
+<!--<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>shake demo</title>-->
+  
+  <!--<style>
+  #toggle1 {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+  }
+  </style>-->
+  <!--<script src="jquery-1.12.4.js"></script>
+  <script src="jquery-ui.js"></script>
+</head>
+<body>
+ 
+<p>Click anywhere to shake the box.</p>
+<button class="toggle1">Rezegni fog</button>
+ <button class="gomb">Gomb</button>
+<script>
+$( document.getElementsByClassName("gomb") ).click(function() {
+  $( ".gomb" ).effect( "shake" );
+});
+</script>
+ 
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Kvíz</title>
+    <script src="jquery-1.12.4.js"></script>
+  <script src="jquery-ui.js"></script>
+    <style>
+        body{
+            line-height: 4;
+        }
+    </style>
+</head>
+
+<body>
+
+	<h2 id="ex">Mi a közös kedvenc sütink Tomival?</h2>
+	
+    <button class="yes">Borzas</button><br>
+    <button class="no1">Krémes</button><br>
+    <button class="no2">Túrótorta</button><br>
+    <button onclick="raz()">Gomb</button>
+  
+    <script>
+        $( document.getElementsByClassName("no1") ).click(function() {
+          $( ".no1" ).effect( "shake" );
+        });
+        function raz(){
+            document.getElementById("ex").style.annimation = "shake 0.5";
+        }
+    </script>
+ 
+</body>
+</html>
